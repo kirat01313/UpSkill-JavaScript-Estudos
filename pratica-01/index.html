@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>UPCA - Home</title>
 </head>
 <body>
-    <header>
-        <h1>UPCA - Ensino Superior Publico</h1>
+    <header class="header">
+        <h1 class="titulo titulo2" id="tituloId">
+            IPCA - Ensino Superior Publico - Barcelos
+        </h1>
+        
+        <div class="header-container">
+            <div>
+                <img class="logotipo" src="../UPCA.svg" alt="logotipo ipca">
+            </div>
+            <div class="form-nav-container">
+                <form>
+                    <label for="busca"></label>
+                    <input type="search" id="busca">
+                    <button type="submit">Enviar</button>
+                </form>
+                <nav class="navigation">
+                    <a>Estudar</a>
+                    <a>I&D+I</a>
+                    <a>Internacional</a>
+                    <a>Viver</a>
+                    <a>UPCA</a>
+                </nav>
+            </div>
+        </div>
     </header>
+
+    <div class="links">
+        <p>Vá para o Google</p>
+        <a href="https://www.google.com/">Google</a>
+
+        <p>Vá para o Youtube em nova página.</p>
+        <a href="http://youtube.com" target="_blank">Youtube</a>
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+html {
+    font-size: 42px;
+}
+*/
+
+p {
+    font-size: 2rem;
+}
+
+body {
+    color: chocolate;
+}
+
+h1 {
+    color: purple;
+    font-size: 38px;
+}
+
+.titulo {
+    color: green;
+}
+
+/* .titulo2 {
+    color: yellow;
+} */
+
+/* #tituloId {
+    color: green;
+} */
+
+.logotipo {
+    width: 90%;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a[target="_blank"] {
+    color: blue;
+}
+
+.links { 
+    font-size: 34px;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+} 
+
+a[target="_blank"]::after {
+    content: "(abre em nova aba)";
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 60px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 50px 25px; 
+    gap: 3px;
+}
+
+.form-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 8px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 24px;
+}
+
