@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body1">
+    <div class="container"></div>
+    <header></header>
+    <main>
+        <article class="cartao-condutor">
+            <h3>Nome do condutor</h3>
+            <p id="nome-condutor">João Silva</p>
+            <h3>Status dos veiculo</h3>
+            <p class="status-veiculo">Ativo</p>
+            <p class="status-veiculo">Pendente</p>
+            <p class="status-veiculo">Inativo</p>
+
+            <h3>Lista infrações</h3>
+            <ul>
+                <li>Excesso Velocidade</li>
+                <li>Ultrapassagem proibida</li>
+                <li>Atropelamento de velhos</li>
+            </ul>
+        </article>
+
+        <article id="cartao-veiculo" class="cartao-veiculo">
+            <div class="parteTema">
+                <h3>Carregue para alterar o tema:</h3>
+                <button type="button" id="button1" onclick="changeTeme()">Alterar Tema</button>
+            </div>
+            <div class="parteNotificar">
+                <h3>Carregue para notificar a multa(?):</h3>
+                <button type="button" id="button2" onclick="addMulta()">Adicionar multa</button>
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+    
+    <script src="code.js" defer></script>
+</body>
+</html>
