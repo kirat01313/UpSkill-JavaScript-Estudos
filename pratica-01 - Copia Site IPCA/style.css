@@ -99,3 +99,48 @@ a[target="_blank"]::after {
     gap: 24px;
 }
 
+.container-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.linhas{
+    width: 600px;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;      /* todas com a mesma forma */
+  object-fit: cover;         /* preenche sem distorcer, cortando o excesso */
+  width: 100%;
+}
+
+.rodape {
+    background-color: black;
+}
+
+.topo-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    padding: 24px 90px;
+}
+
+.topo-rodape img {
+    height: 100px;    /* os dois com a mesma altura */
+    width: auto;     /* a largura acompanha, sem distorcer */
+}
