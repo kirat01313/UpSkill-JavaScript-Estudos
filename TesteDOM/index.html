@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Calculadora</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 0 auto;
+            background-color: aqua;
+            width: auto;
+        }
+
+        .numeros {
+            background-color: bisque;
+            
+        }
+
+        .programa {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h2>Calculadora</h2>
+        <section class="programa">
+            <h3>Informe os números:</h3>
+            <div class="numeros">
+                <p>1º Número: <input type="text" id="num1"></p> 
+                <p>2º Número: <input type="text" id="num2"></p>
+            </div>
+            <h3>Escolha a operação:</h3>
+            <div class="botoes">
+                <button onclick="somar()">Soma</button>
+                <button onclick="subtrair()">Subtração</button>
+            </div>
+            <h3>Resultado</h3>
+            <div class="resultado">
+                <p id="resultado">(resultado)</p>
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+
+    <script>
+        function somar() {
+            const numero1 = Number(document.getElementById("num1").value);
+            const numero2 = Number(document.getElementById("num2").value);
+            const resultadoSoma = numero1 + numero2
+            document.getElementById("resultado").innerHTML = resultadoSoma.toFixed(2);
+        }
+        function subtrair () {
+            const numero1 = Number(document.getElementById("num1").value);
+            const numero2 = Number(document.getElementById("num2").value);
+            const resultadoSubtracao = numero1 - numero2
+            document.getElementById("resultado").innerHTML = resultadoSubtracao.toFixed(2);
+        }
+        
+
+    </script>    
+</body>
+</html>
